@@ -1,0 +1,11 @@
+Import('RTT_ROOT')
+Import('rtconfig')
+from building import *
+
+cwd     = os.path.join(str(Dir('#')), 'lcd')
+src	= Glob('*.c')+Glob('*.h')
+CPPPATH = [cwd, str(Dir('#'))]
+
+group = DefineGroup('lcd', src, depend = [''], CPPPATH = CPPPATH)
+
+Return('group')
