@@ -22,6 +22,7 @@
 #include "camera.h"
 
 #include <finsh.h>
+////123456778889899
 
 
 #define RS485_GPIO_TX			GPIO_Pin_2 	// PA2
