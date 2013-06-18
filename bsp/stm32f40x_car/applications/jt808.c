@@ -1147,7 +1147,7 @@ static void jt808_socket_proc( void )
 	state = gsmstate( GSM_STATE_GET );
 	if( state == GSM_IDLE )
 	{
-		gsmstate( GSM_POWERON );                /*开机登网*/
+		//gsmstate( GSM_POWERON );                /*开机登网*/
 		return;
 	}
 /*控制登网*/
